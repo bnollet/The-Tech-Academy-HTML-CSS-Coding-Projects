@@ -86,11 +86,36 @@
 	<div class="col-sm">
 		<h3>Contact Information</h3>
 		<p>Email:bnollet7@gmail<br>GitHub: Bnollet</p>
+		<div>
+			<button class= "btn-primary" type="button" data-toggle="modal" data-target=".register">Linkedin Profile</button>
+			<br>
+			<br>
+		</div>
 	</div>
   </div>
   <!--/Contact-->
   
+  <!--Modal for Linkedin-->
   
+  <div class="modal fade register">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Linkedin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+        <p><a href="https://www.linkedin.com/in/brenden-nollet-2300366b/">Check out my Linkedin Profile</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   
   
   
