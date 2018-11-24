@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>PIES GUYS PIZZA</title>
+  </head>
+<body>
+
+<h1>PIES GUYS PIZZA</h1><br><br>
+
+
+
+<!--Pizza size buttons-->
+<form id="frmmenu">
+<div>
+	<h2>Pizza Size</h2>
+		<form>
+		  <input class="size" type="radio" name="size" value="Personal Pizza" checked> Personal........$6.00<br>
+		  <input class="size" type="radio" name="size" value="Medium Pizza"> Medium........$10.00 <br>
+		  <input class="size" type="radio" name="size" value="Large Pizza"> Large..............$14.00 <br>
+		  <input class="size" type="radio" name="size" value="Extra Large Pizza"> Xtra-Large....$16.00
+</div>
+
+<!--Toppings-MEAT-->
+<div>
+	<h2>Toppings-Meats</h2>
+		<form action="/action_page.php">
+		  <input class="meats" type="checkbox" name="meat" value="Pepperoni" checked > Perpperoni<br>
+		  <input class="meats" type="checkbox" name="meat" value="Sausage"> Sausage<br>
+		  <input class="meats" type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
+		  <input class="meats" type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
+		  <input class="meats" type="checkbox" name="meat" value="Anchovy"> Anchovy<br>
+		  <input class="meats" type="checkbox" name="meat" value="Chicken"> Chicken<br><br>
+		  <h6>+$1.00 each additional meat items beyond the first complementary meat item</h6>
+</div>
+
+<!--Cheese-->
+<div>
+	<h2>Cheese options</h2>
+		<input class="cheese" type="radio" name="Cheese" value="Regular" checked> Regular<br>
+		 <input class="cheese" type="radio" name="Cheese" value="No Cheese"> No Cheese<br>
+		 <input class="cheese" type="radio" name="Cheese" value="Extra Cheese"> Extra Cheese...$3.00<br><br>
+</div>
+
+<!-- Crust options-->
+<div>
+	<h2>Crust options</h2>
+		  <input class="crust" type="radio" name="crust" value="Plain" checked> Plain Crust<br>
+		  <input class="crust" type="radio" name="crust" value="Garlic Butter"> Garlic Butter Crust <br>
+		  <input class="crust" type="radio" name="crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust...$3.00 <br>
+		  <input class="crust" type="radio" name="crust" value="Spicy Crust"> Spicy Crust</br>
+		  <input class="crust" type="radio" name="crust" value="House Special Crust"> House-Special Crust
+
+</div>
+
+<!-- Sauce Selection-->
+<div>
+	<h2>Sauce Selection</h2>
+			<input class="sauce" type="radio" name="sauce" value="Marinara" checked> Marinara Sauce<br>
+		  <input class="sauce" type="radio" name="sauce" value="White"> White Sauce <br>
+		  <input class="sauce" type="radio" name="sauce" value="BBQ"> BBQ Sauce <br>
+		  <input class="sauce" type="radio" name="sauce" value="No Sauce"> No Sauce</br>
+</div>
+<!-- Veggie Selection-->
+<div>
+	<h2>Veggie Toppings</h2>
+		<input class="veggie" type="checkbox" name="Veggie" value="Tomatoes" checked> Tomatoes<br>
+		  <input class="veggie" type="checkbox" name="Veggie" value="Onions"> Onions<br>
+		  <input class="veggie" type="checkbox" name="Veggie" value="Olives"> Olives<br>
+		  <input class="veggie" type="checkbox" name="Veggie" value="Green Peppers"> Green Peppers<br>
+		  <input class="veggie" type="checkbox" name="Veggie" value="Mushrooms"> Mushrooms<br>
+		  <input class="veggie" type="checkbox" name="Veggie" value="Pineapple"> Pineapple<br>
+		  <input class="veggie" type="checkbox" name="Veggie" value="Spinach"> Spinach<br>
+		  <input class="veggie" type="checkbox" name="Veggie" value="Jalapeno"> Jalapeno<br>
+		  <h6>+$1.00 each additional veggie items beyond the first complementary veggie item</h6>
+		 </form>
+</div>
+
+<!--Button to add up selections-->
+		<div>
+			<button id="btnOrder" onclick="getReceipt()" value="Place Order" style="width:150px;height:40px;">button</button>
+		</div>
+		
+<!--Reciept-->
+<div id="showText">
+	<h3>Your Order</h3>
+</div>
+<div id="totalPrice">
+	<h3>Subtotal</h3>
+</div>
+
+
+	
+	
+	
+	
+	
+	
+	
+		
+<!--javascript-->
+	<script src="pies_guys.js"></script>
+		
+  </body>
+</html>
